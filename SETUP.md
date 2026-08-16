@@ -1,13 +1,13 @@
-# Build a website with Claude Code — start here
+# Setup — from nothing to a live website
 
 This gets you from nothing to a **live website on the internet** in about 30 minutes,
-without you writing any code and with almost no time in a terminal.
+without writing any code and with almost no time in a terminal.
 
 You will do three things:
 
 1. Create a GitHub account (5 min)
 2. Install the Claude desktop app (5 min)
-3. Paste two files into Claude and let it build and deploy the site (20 min)
+3. Hand Claude two files and let it build and deploy the site (20 min)
 
 That's it. Claude does the rest — including creating the folder on your computer,
 setting up the project, and pushing it live.
@@ -52,6 +52,7 @@ Everything else (Node.js, Git, the Cloudflare tools) gets installed by Claude du
 setup, with your approval, step by step. Don't go install them in advance.
 
 **Optional but recommended if terminals make you nervous:**
+
 - **GitHub Desktop** — https://desktop.github.com — a normal app with buttons for
   saving and publishing your changes, instead of typed commands. Claude can drive
   this same process for you, so treat it as a safety net rather than a requirement.
@@ -96,12 +97,13 @@ folder called my-site. Walk me through it."* It will.
 
 ## Step 3 — Hand Claude the two setup files (20 minutes)
 
-In your kit alongside this document there are two files:
+Two files from this kit do the work:
 
 - `CLAUDE.md` — the rules for your project. Claude reads this automatically every
   session, forever. It's what keeps your site consistent as it grows.
-- `SKILL.md` — a **one-time setup guide** for Claude. It tells Claude how to scaffold
-  the site, connect to Cloudflare, and get you deployed. Used once, then retired.
+- `.claude/skills/project-setup/SKILL.md` — a **one-time setup guide** for Claude. It
+  tells Claude how to scaffold the site, connect to Cloudflare, and get you deployed.
+  Used once, then retired.
 
 ### 3a. Put them in place
 
@@ -115,7 +117,8 @@ Then paste the contents of `CLAUDE.md`, wait for it to save, then paste the cont
 of `SKILL.md`.
 
 *(Alternative: drag both files into the Claude desktop app chat window as attachments
-and give it the same instruction.)*
+and give it the same instruction. Or, if you cloned this kit's repository, they're
+already in the right place — skip to 3b.)*
 
 ### 3b. Say the magic sentence
 
